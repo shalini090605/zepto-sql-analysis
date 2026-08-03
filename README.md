@@ -2,10 +2,10 @@
 
 A SQL project analyzing Zepto's (quick-commerce) product catalog — covering data exploration, data cleaning, and 8 business questions using PostgreSQL.
 
-## 📌 Overview
+##  Overview
 This project simulates a real-world scenario: cleaning messy e-commerce product data and answering business questions that a category or operations team might actually ask — around pricing, discounts, stock, and inventory.
 
-## 🗂️ Dataset
+##  Dataset
 The `zepto` table includes the following columns:
 | Column | Description |
 |---|---|
@@ -20,12 +20,12 @@ The `zepto` table includes the following columns:
 | `outOfStock` | Stock status (true/false) |
 | `quantity` | Order quantity |
 
-## 🧹 Data Cleaning Steps
+##  Data Cleaning Steps
 - Checked for `NULL` values across all key columns
 - Removed rows where `mrp = 0` (invalid/incomplete listings)
 - Converted `mrp` and `discountedSellingPrice` from paise to rupees
 
-## ❓ Business Questions Answered
+##  Business Questions Answered
 1. Top 10 best-value products based on discount percentage
 2. Products with high MRP that are out of stock
 3. Estimated revenue per category
@@ -35,11 +35,11 @@ The `zepto` table includes the following columns:
 7. Weight-based product segmentation (Low / Medium / Bulk)
 8. Total inventory weight per category
 
-## 🛠️ Tools Used
+##  Tools Used
 - PostgreSQL
 - SQL (joins, aggregations, `CASE` statements, grouping, filtering)
 
-## 🚀 How to Run
+##  How to Run
 1. Create a PostgreSQL database.
 2. Run `zepto_sql_analysis.sql` in your SQL client (pgAdmin, DBeaver, or `psql`) — it creates the table and runs all the analysis queries.
 3. Load your own Zepto dataset CSV into the `zepto` table before running the exploration/cleaning/business-question sections.
